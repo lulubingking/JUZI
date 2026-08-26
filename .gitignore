@@ -1,0 +1,28 @@
+# ===== 依赖与构建产物 =====
+node_modules/
+dist/
+*.local
+
+# ===== Python =====
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.egg-info/
+
+# ===== 环境与配置 =====
+.env
+server/.env
+
+# ===== 上传与运行时数据 =====
+server/uploads/
+*.log
+
+# ===== IDE / 系统 =====
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ===== 临时文件 =====
+.tmp_*.png

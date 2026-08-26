@@ -1,0 +1,22 @@
+{
+  "name": "juzi-phone",
+  "version": "1.0.0",
+  "private": true,
+  "description": "橘子手机（JUZI PHONE）企业官网 Monorepo：apps/web（前台）+ apps/admin（后台）+ packages/shared（共享类型）+ server（FastAPI）",
+  "scripts": {
+    "dev:web": "pnpm --filter web dev",
+    "dev:admin": "pnpm --filter admin dev",
+    "build:web": "pnpm --filter web build",
+    "build:admin": "pnpm --filter admin build",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "es5-ext"
+    ]
+  }
+}
